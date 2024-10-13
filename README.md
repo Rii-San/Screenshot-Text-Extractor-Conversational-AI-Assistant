@@ -9,7 +9,6 @@ This Python-based application combines Optical Character Recognition (OCR) with 
 - **AI-Powered Explanations**: The extracted text is automatically sent to an AI model (via Ollama API), which provides detailed explanations.
 - **Interactive Chat Interface**: Users can engage with the AI through a chat interface that supports conversational inputs and generates intelligent responses.
 - **System Tray Integration**: The app minimizes to the system tray, allowing it to run unobtrusively in the background.
-- **Customizable UI**: Built with the CustomTkinter framework for a modern and sleek interface, offering system-level appearance themes.
 
 ## Key Components
 - **Tesseract OCR**: Integrated with Tesseract for accurate text extraction from images or screenshots.
