@@ -38,9 +38,25 @@ This Python-based application combines Optical Character Recognition (OCR) with 
    python main.py
    ```
 
+## How to use ?
+![gif](https://github.com/user-attachments/assets/e4b224cf-10a1-4c1c-a8e9-9b0d2bf59ae4)
+
+### **Steps to Use the Application**
+
+1. **Launch the Program**: Run the script or double-click the executable file.
+2. **Minimize to Tray**: Close or minimize the window; the program will continue running in the system tray.
+3. **Activate Snipping Tool**: Press `Shift + Win + S`, the screenshots are stored on clipboard
+4. **Clipboard Setup**: Ensure clipboard history is enabled (`Win + V`) for automatic text extraction.
+5. **Capture Text**: Drag over the text you want the AI to process; .
+6. **Automatic Text Processing**: The program will extract the text and display it, sending it to the AI for an explanation.
+7. **AI Response**: The AI will provide explanations and generate questions based on the extracted text.
+8. **System Tray Access**: Click the tray icon to restore the program when needed.
+
 ## Future Enhancements
-- **Automated Question Generation**: Expand the AI’s capabilities to automatically generate more complex, multi-faceted questions based on extracted text.
+- **Non-Text Image Recognition**: Expand the AI’s capabilities to "See" beyond text.
 - **Additional Language Support**: Extend the OCR and AI capabilities to handle multiple languages.
+- **Mathematical OCR***: Being able to understand Mathematical expressions and equations and the ability to display it on screen.
+- **Handwritting Recognition**
 
 ## License
 This project is open-source and available under the MIT License.
