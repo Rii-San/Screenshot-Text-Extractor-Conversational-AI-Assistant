@@ -14,6 +14,7 @@ import ollama
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Global variables
+APP_NAME="Artificial Tutor v0.1.0"
 previous_hash = None
 window = None
 extracted_text = ""
@@ -147,7 +148,7 @@ def minimize_to_tray():
     if tray_icon:
         tray_icon.stop()
 
-    tray_icon = TrayIcon("Book Assistant", image, "Book Assistant", menu)
+    tray_icon = TrayIcon(APP_NAME, image, APP_NAME, menu)
     threading.Thread(target=tray_icon.run, daemon=True).start()
 
 def on_quit_from_tray(icon, item):
@@ -166,8 +167,8 @@ def create_ui():
     global window, text_entry, input_field
 
     window = ctk.CTk()
-    window.geometry('650x350')
-    window.title('Book Assistance')
+    window.geometry('700x350')
+    window.title(APP_NAME)
     window.configure(bg=BG_COLOR)
     window.protocol("WM_DELETE_WINDOW", minimize_to_tray)
     window.iconbitmap('icons/BAicon.ico')
@@ -182,9 +183,13 @@ def create_ui():
     button_frame = ctk.CTkFrame(window)
     button_frame.grid(column=0, row=1, sticky='nsew')
 
-    input_field = ctk.CTkEntry(button_frame, placeholder_text="Start Chatting...", font=('Arial', 16), width=630, height=35)
+    input_field = ctk.CTkEntry(button_frame, placeholder_text="Start Chatting...", font=('Arial', 16), width=550, height=35)
     input_field.grid(column=0, row=0, sticky='nsew', padx=(10, 0), pady=10)
     input_field.bind('<Return>', on_input_field_enter)
+
+    # Adding the text "created by Jayesh Ku. Aanant" at the bottom-right corner
+    credit_label = ctk.CTkLabel(window, text="By Jayesh Kumar Aanant", text_color=TEXT_COLOR, bg_color="#2b2b2b", font=('Arial', 10, 'italic'))
+    credit_label.place(relx=1.0, rely=1.0, anchor='se', x=-10, y=-10)  # Bottom-right corner with padding
 
     return window
 
