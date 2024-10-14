@@ -35,7 +35,7 @@ This Python-based application combines Optical Character Recognition (OCR) with 
    ```
 3. Run the application:
    ```bash
-   python main.py
+   python ArtificialTutor.py
    ```
 
 ## How to use ?
@@ -59,4 +59,14 @@ This Python-based application combines Optical Character Recognition (OCR) with 
 - **Handwritting Recognition**
 
 ## License
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License, with additional conditions.
+
+You are free to:
+
+   - Use the software for personal or educational purposes.
+   - Modify and adapt the code for personal projects.
+
+However, you **may not**:
+
+   - Redistribute this software, either modified or unmodified, without explicit written permission from the original author.
+   - Use this software, or any derivative works, for commercial purposes without explicit written permission from the original author.
